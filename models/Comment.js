@@ -15,7 +15,7 @@ Comment.init(
       allowNull: false,
     },
   },
-  { sequelize }
+  { sequelize, freezeTableName: true }
 );
 
 module.exports = Comment;

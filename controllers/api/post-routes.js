@@ -1,2 +1,9 @@
-// const router = require("express").Router();
-// const { Post } = require("../../models/");
+const router = require("express").Router();
+const { Post, User, Comment } = require("../../models/");
+const withAuth = require("../../utils/auth");
+
+router.get("/", (req, res) => {
+  res.render("new-post");
+});
+
+module.exports = router;
